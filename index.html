@@ -3,170 +3,227 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhamvas | Uttarakhand & Char Dham Specialist</title>
+<title>DHAMVAS | Char Dham & Uttarakhand Tour Specialist Since 2003</title>
 
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f5f5;
 }
-header{
+
+/* TOP BAR */
+.topbar{
     background:#000;
     color:#fff;
-    padding:15px;
     text-align:center;
-    font-size:22px;
-    font-weight:bold;
+    padding:10px;
+    font-size:14px;
 }
+
+/* HERO */
 .hero{
-    height:90vh;
-    background:url('https://images.unsplash.com/photo-1621619856624-42fd193a0661') no-repeat center center/cover;
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1590736969955-71cc94901144') no-repeat center center/cover;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
     color:#fff;
+    position:relative;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,0.6);
+}
+.hero-content{
+    position:relative;
+    z-index:2;
 }
 .hero h1{
-    font-size:48px;
-    background:rgba(0,0,0,0.6);
-    padding:20px;
-    border-radius:10px;
+    font-size:45px;
+    margin-bottom:10px;
 }
-.section{
-    padding:50px 20px;
-    text-align:center;
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
 }
-.section h2{
-    margin-bottom:30px;
-}
-.card{
-    background:#fff;
-    padding:20px;
-    margin:15px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-    display:inline-block;
-    width:280px;
-    vertical-align:top;
-}
-.button{
+.btn{
     display:inline-block;
     padding:12px 20px;
     background:#ff6600;
     color:#fff;
     text-decoration:none;
-    border-radius:5px;
-    margin-top:10px;
+    border-radius:6px;
+    margin:5px;
+    font-weight:bold;
 }
+.btn:hover{
+    background:#e65c00;
+}
+
+/* SECTION */
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+.section h2{
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+/* CARD GRID */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+.card{
+    background:#fff;
+    padding:25px;
+    width:280px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+.card h3{
+    color:#b8860b;
+}
+
+/* CONTACT */
 .contact{
     background:#000;
     color:#fff;
-    padding:30px;
+    padding:50px 20px;
+    text-align:center;
 }
+.contact a{
+    color:#fff;
+}
+
+/* FOOTER */
 .footer{
     background:#111;
     color:#ccc;
     padding:20px;
     text-align:center;
 }
+
+/* WHATSAPP FLOAT */
 .whatsapp-float{
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25D366;
     color:#fff;
-    padding:15px 18px;
+    padding:15px 20px;
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 </style>
 </head>
 
 <body>
 
-<header>
-DHAMVAS | Uttarakhand & Char Dham Specialist (Since 2003)
-</header>
-
-<div class="hero">
-<h1>Experience Divine Journey with Dhamvas</h1>
+<div class="topbar">
+📞 807703397 | 8630538765 &nbsp; | &nbsp; 💬 WhatsApp: 9634175422
 </div>
 
-<div class="section">
+<section class="hero">
+<div class="hero-content">
+<h1>DHAMVAS</h1>
+<p>Char Dham & Uttarakhand Tour Specialist</p>
+<p>Since 2003 | 20+ Years Mountain Driving Experience</p>
+
+<a href="tel:807703397" class="btn">Call Now</a>
+<a href="tel:8630538765" class="btn">Second Number</a>
+<a href="https://wa.me/919634175422" target="_blank" class="btn">WhatsApp</a>
+</div>
+</section>
+
+<section class="section">
 <h2>Our Tour Packages</h2>
+<div class="grid">
 
 <div class="card">
 <h3>Char Dham Yatra</h3>
-<p>Yamunotri, Gangotri, Kedarnath & Badrinath Complete Package</p>
+<p>Yamunotri, Gangotri, Kedarnath & Badrinath Complete Package.</p>
 </div>
 
 <div class="card">
 <h3>Do Dham Yatra</h3>
-<p>Kedarnath & Badrinath Comfortable Travel Package</p>
+<p>Kedarnath & Badrinath Comfortable Travel Package.</p>
 </div>
 
 <div class="card">
 <h3>Haridwar - Rishikesh Tour</h3>
-<p>Ganga Aarti & Spiritual Trip</p>
+<p>Ganga Aarti & Spiritual Trip Experience.</p>
 </div>
 
 </div>
+</section>
 
-<div class="section">
+<section class="section">
 <h2>Our Vehicle Fleet</h2>
+<div class="grid">
 
 <div class="card">
 <h3>Innova Crysta</h3>
-<p>Luxury & Comfortable Travel</p>
+<p>Luxury & Comfortable Ride for Char Dham.</p>
 </div>
 
 <div class="card">
 <h3>Kia Carens</h3>
-<p>Premium Family Vehicle</p>
+<p>Premium Family Travel Option.</p>
 </div>
 
 <div class="card">
 <h3>Swift Dzire</h3>
-<p>Budget Friendly Taxi</p>
+<p>Budget Friendly Taxi for Small Groups.</p>
 </div>
 
 <div class="card">
 <h3>Tempo Traveller</h3>
-<p>Group Tour Specialist</p>
+<p>12 / 17 Seater Group Tour Specialist.</p>
 </div>
 
 </div>
+</section>
 
-<div class="section">
-<h2>Why Choose Dhamvas?</h2>
-<p>✔ 2003 se trusted cab service</p>
-<p>✔ All Uttarakhand Specialist</p>
-<p>✔ Safe & Experienced Drivers</p>
-<p>✔ Genuine Customer Reviews</p>
-</div>
+<section class="section">
+<h2>Why Choose DHAMVAS?</h2>
+<p>✔ Since 2003 Trusted Cab Service</p>
+<p>✔ All Uttarakhand & Char Dham Specialist</p>
+<p>✔ Experienced Mountain Drivers</p>
+<p>✔ Genuine Google Reviews</p>
+</section>
 
-<div class="contact">
-<h2>Contact Us</h2>
-<p>📞 Call: 807703397</p>
-<p>📞 Call: 8630538765</p>
-<p>💬 WhatsApp: 9634175422</p>
-<p>📧 Email: shridhamvas@gmail.com</p>
+<section class="contact">
+<h2>Connect With Us</h2>
 
 <p>
-<a href="https://youtube.com/@uk08travelwithvinodrawatvl40" target="_blank" class="button">YouTube</a>
-<a href="https://www.instagram.com/dhamvas" target="_blank" class="button">Instagram</a>
-<a href="https://maps.app.goo.gl/fJhKgW135Ezxqptd7" target="_blank" class="button">Google Business</a>
+<a href="https://youtube.com/@uk08travelwithvinodrawatvl40" target="_blank" class="btn">YouTube</a>
+<a href="https://www.instagram.com/dhamvas" target="_blank" class="btn">Instagram</a>
+<a href="https://maps.app.goo.gl/fJhKgW135Ezxqptd7" target="_blank" class="btn">Google Business</a>
 </p>
-</div>
+
+<p>Email: <a href="mailto:shridhamvas@gmail.com">shridhamvas@gmail.com</a></p>
+
+</section>
 
 <div class="footer">
-© 2026 Dhamvas | All Rights Reserved
+© 2026 DHAMVAS | Haridwar | All Rights Reserved
 </div>
 
-<a class="whatsapp-float" href="https://wa.me/919634175422" target="_blank">
+<a href="https://wa.me/919634175422" target="_blank" class="whatsapp-float">
 WhatsApp
 </a>
 
