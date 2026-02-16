@@ -282,6 +282,46 @@ View More Reviews on Google
 <a href="https://wa.me/919634175422" target="_blank" class="whatsapp-float">
 WhatsApp
 </a>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const counters = document.querySelectorAll('.counter');
+  let started = false;
+
+  function startCounter() {
+    if (started) return;
+
+    const section = document.querySelector('.experience');
+    const sectionTop = section.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (sectionTop < screenHeight - 100) {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const speed = 200;
+
+        const updateCount = () => {
+          const increment = target / speed;
+
+          if (count < target) {
+            count += increment;
+            counter.innerText = Math.ceil(count);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+
+      started = true;
+    }
+  }
+startCounter();
+  window.addEventListener('scroll', startCounter);
+});
+</script>
 </body>
 </html>
