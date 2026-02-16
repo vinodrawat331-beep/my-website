@@ -311,6 +311,7 @@ View More Reviews on Google
 <div class="footer">
 © 2026 DHAMVAS | Haridwar | All Rights Reserved
 </div>
+  
 <section style="padding:60px 20px; background:#f9f9f9; text-align:center;">
     <h2 style="margin-bottom:30px;">Our Location on Google Maps</h2>
 
@@ -370,6 +371,30 @@ document.addEventListener("DOMContentLoaded", function () {
 startCounter();
   window.addEventListener('scroll', startCounter);
 });
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+   ...
+});
+
+function sendToWhatsApp() {
+   var name = document.getElementById("name").value;
+   var phone = document.getElementById("phone").value;
+   var destination = document.getElementById("destination").value;
+   var date = document.getElementById("date").value;
+
+   var message = "New Booking Enquiry:%0A"
+       + "Name: " + name + "%0A"
+       + "Phone: " + phone + "%0A"
+       + "Destination: " + destination + "%0A"
+       + "Travel Date: " + date;
+
+   var whatsappURL = "https://wa.me/919634175422?text=" + message;
+
+   window.open(whatsappURL, "_blank");
+}
+
+</script> 
 </script>
 </body>
 </html>
