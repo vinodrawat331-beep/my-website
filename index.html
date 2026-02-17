@@ -6,11 +6,18 @@
 <title>DHAMVAS | Char Dham & Uttarakhand Tour Specialist Since 2003</title>
 
 <style>
-body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-background: linear-gradient(to bottom, #f8fafc, #e6f0f5);    
+ 
+
+:root{
+  --main-orange: #FF6A00;
 }
+
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background: linear-gradient(to bottom, #f8fafc, #e6f0f5);
+}
+
 
 /* TOP BAR */
 .topbar{
@@ -32,7 +39,9 @@ background: linear-gradient(to bottom, #f8fafc, #e6f0f5);
     color:#fff;
     position:relative;
 }
-
+.location h2{
+  color: var(--main-orange);
+}
 .hero-content{
     position:relative;
     z-index:2;
@@ -54,9 +63,13 @@ background: linear-gradient(to bottom, #f8fafc, #e6f0f5);
     margin:6px;
     font-weight:bold;
 }
-.btn:hover{
-    background:#e65c00;
-}
+ .btn:hover{
+   background:#e65c00;
+   transform:scale(1.05);
+   transition:0.3s;
+ }
+
+    
 
 /* SECTION */
 .section{
@@ -687,10 +700,7 @@ View More Reviews on Google
 margin-bottom:20px;
 font-size:32px;
 font-weight:bold;
-background: linear-gradient(45deg, #FFD700, #FFA500, #FFCC00);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-text-shadow: 0 0 15px rgba(255,215,0,0.8);
+color:white;
 ">
 Our Location
 </h2>
