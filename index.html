@@ -163,31 +163,18 @@ background: linear-gradient(135deg, #f8fffb, #e8f5e9);
     box-shadow:0 4px 10px rgba(0,0,0,0.3);
 }
 /* ===== PREMIUM TOUR PACKAGES SECTION ===== */
-
-.premium-packages{
-    padding:80px 20px;
-    background:linear-gradient(to bottom,#0f2027,#203a43,#2c5364);
-    text-align:center;
-}
-
-.main-title{
-    font-size:32px;
-    color:#fff;
-    margin-bottom:50px;
-    font-weight:700;
-}
-
 .premium-card{
     position:relative;
     min-height:420px;
-    height:auto;
     padding:40px 20px;
     border-radius:20px;
     margin:30px auto;
     max-width:1000px;
     background-size:cover;
     background-position:center;
-    overflow:visible;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     transition:0.4s ease;
     box-shadow:0 10px 30px rgba(0,0,0,0.4);
 }
@@ -201,23 +188,7 @@ background: linear-gradient(135deg, #f8fffb, #e8f5e9);
     width:100%;
     text-align:center;
     background:rgba(0,0,0,0.6);
-    padding:40px;
-    border-radius:15px;
-    color:#fff;
-}
-    overflow:visible;
-    transition:0.4s ease;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
-
-.premium-card:hover{
-    transform:scale(1.03);
-    box-shadow:0 0 25px rgba(255,215,0,0.6);
-}
-
-.overlay{
-    background:rgba(0,0,0,0.6);
-    padding:40px;
+    padding:50px 30px;
     border-radius:15px;
     color:#fff;
 }
@@ -226,6 +197,37 @@ background: linear-gradient(135deg, #f8fffb, #e8f5e9);
     font-size:28px;
     margin-bottom:15px;
 }
+
+.overlay p{
+    font-size:16px;
+    margin-bottom:15px;
+}
+.premium-packages{
+    padding:80px 20px;
+    background:linear-gradient(to bottom,#0f2027,#203a43,#2c5364);
+    text-align:center;
+}
+
+.main-title{
+    font-size:32px;
+    color:#fff;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
 
 .overlay p{
     font-size:16px;
@@ -277,13 +279,16 @@ background: linear-gradient(135deg, #f8fffb, #e8f5e9);
 /* Responsive */
 
 @media(max-width:768px){
-    .premium-card{
-        min-height:350px;
-height:auto;
-    }
-    .overlay{
-        padding:20px;
-    }
+.premium-card{
+    min-height:auto;
+    height:auto;
+    padding:60px 20px;
+}    
+.overlay{
+    padding:25px;
+}    
+        
+    
     .main-title{
         font-size:24px;
     }
@@ -390,56 +395,29 @@ height:auto;
     
 
     
-}
 
-.badrinath {
-    background-image: url('badrinath.jpg');
-}
 
-.gangotri {
-    background-image: url('gangotri.jpg');
-}
 
-.yamunotri {
-    background-image: url('yamunotri.jpg');
-}
 
-</style>
 
-<section class="section">
-<h2>Our Vehicle Fleet</h2>
-<div class="grid">
 
-<div class="card">
-<h3>Innova Crysta</h3>
-<p>Luxury & Comfortable Ride for Char Dham.</p>
-</div>
 
-<div class="card">
-<h3>Kia Carens</h3>
-<p>Premium Family Travel Option.</p>
-</div>
 
-<div class="card">
-<h3>Swift Dzire</h3>
-<p>Budget Friendly Taxi for Small Groups.</p>
-</div>
 
-<div class="card">
-<h3>Tempo Traveller</h3>
-<p>12 / 17 Seater Group Tour Specialist.</p>
-</div>
 
-</div>
-</section>
 
-<section class="section">
-<h2>Why Choose DHAMVAS?</h2>
-<p>✔ Since 2003 Trusted Cab Service</p>
-<p>✔ All Uttarakhand & Char Dham Specialist</p>
-<p>✔ Experienced Mountain Drivers</p>
-<p>✔ Genuine Google Reviews</p>
-</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- REVIEW SECTION -->
 <section class="section">
