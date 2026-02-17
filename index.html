@@ -214,7 +214,53 @@ background: linear-gradient(135deg, #f8fffb, #e8f5e9);
     margin-bottom:50px;
     font-weight:700;
 }
+/* ===== CAR RENTAL SECTION ===== */
 
+.car-rental-section{
+    padding:70px 20px;
+    background:linear-gradient(135deg,#071c2b,#0a2d44);
+    text-align:center;
+}
+
+.car-rental-section h2{
+    font-size:34px;
+    margin-bottom:15px;
+    color:#FFD700;
+}
+
+.car-rental-section p{
+    color:#ccc;
+}
+
+.rental-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+}
+
+.rental-card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    padding:35px;
+    width:280px;
+    border-radius:25px;
+    border:1px solid rgba(255,215,0,0.3);
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+    transition:0.4s ease;
+}
+
+.rental-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 25px 60px rgba(255,215,0,0.4);
+}
+
+@media(max-width:768px){
+    .rental-card{
+        width:100%;
+    }
+}
 
 
 
@@ -386,7 +432,45 @@ background: linear-gradient(135deg, #f8fffb, #e8f5e9);
 </div>
 
 </section>
+<!-- Car Rental Section -->
 
+<section class="car-rental-section">
+
+    <h2>Taxi & Car Rental Services</h2>
+    <p>Only Taxi Service Available for Char Dham, Do Dham & Local Tours.</p>
+
+    <div class="rental-grid">
+
+        <div class="rental-card">
+            <h3>Sedan (Dzire / Etios)</h3>
+            <p>4 Seater • Comfortable Ride</p>
+            <h4>₹3,500 / Day</h4>
+            <a href="https://wa.me/919634175422?text=I want Sedan Car Rental Details"
+               target="_blank"
+               class="book-btn">Book Sedan</a>
+        </div>
+
+        <div class="rental-card">
+            <h3>SUV (Innova / Ertiga)</h3>
+            <p>6–7 Seater • Family Trip Special</p>
+            <h4>₹5,500 / Day</h4>
+            <a href="https://wa.me/919634175422?text=I want SUV Rental Details"
+               target="_blank"
+               class="book-btn">Book SUV</a>
+        </div>
+
+        <div class="rental-card">
+            <h3>Tempo Traveller</h3>
+            <p>12 Seater • Group Yatra</p>
+            <h4>₹8,500 / Day</h4>
+            <a href="https://wa.me/919634175422?text=I want Tempo Traveller Details"
+               target="_blank"
+               class="book-btn">Book Now</a>
+        </div>
+
+    </div>
+
+</section>
 
 
 
