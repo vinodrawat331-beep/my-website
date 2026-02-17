@@ -661,158 +661,26 @@ View More Reviews on Google
 <p>Email: <a href="mailto:shridhamvas@gmail.com">shridhamvas@gmail.com</a></p>
 
 </section>
-<section class="section">
-<h2>Taxi & Car Rental Service</h2>
 
-<div class="rental-grid">
 
-<div class="car-card">
-<img src="images/dzire.jpg" class="car-img">
-<div class="car-content">
-<h3>Swift Dzire</h3>
-<p>4 Seater</p>
-<p class="car-price">₹3500</p>
-<a href="https://wa.me/919634175422" class="book-btn">Book Now</a>
-</div>
-</div>
+  
 
-<div class="car-card">
-<img src="images/innova.jpg" class="car-img">
-<div class="car-content">
-<h3>Innova Crysta</h3>
-<p>6 & 7 Seater</p>
-<p class="car-price">₹6000</p>
-<a href="https://wa.me/919634175422" class="book-btn">Book Now</a>
-</div>
-</div>
+  
 
-<div class="car-card">
-<img src="images/carens.jpg" class="car-img">
-<div class="car-content">
-<h3>Kia Carens</h3>
-<p>6 Seater</p>
-<p class="car-price">₹4500</p>
-<a href="https://wa.me/919634175422" class="book-btn">Book Now</a>
-</div>
-</div>
-
-<div class="car-card">
-<img src="images/tempo.jpg" class="car-img">
-<div class="car-content">
-<h3>Tempo Traveller</h3>
-<p>12–26 Seater</p>
-<p class="car-price">₹8000</p>
-<a href="https://wa.me/919634175422" class="book-btn">Book Now</a>
-</div>
-</div>
-
-</div>
-</section>
-<div class="footer">
-© 2026 DHAMVAS | Haridwar | All Rights Reserved
-</div>
-<section class="exp-box" style="padding:60px 20px; text-align:center;">
-  <h2 style="margin-bottom:30px;">Book Your Tour Now</h2>
-
-  <input type="text" id="name" placeholder="Your Name" 
-    style="padding:10px; margin:10px; width:250px;"><br>
-
-  <input type="tel" id="phone" placeholder="Your Phone Number" 
-    style="padding:10px; margin:10px; width:250px;"><br>
-
-  <input type="text" id="destination" placeholder="Destination" 
-    style="padding:10px; margin:10px; width:250px;"><br>
-
-  <input type="date" id="date" 
-    style="padding:10px; margin:10px; width:250px;"><br>
-
-  <button onclick="sendToWhatsApp()" 
-    style="padding:12px 25px; background:#ff6600; color:white; border:none; cursor:pointer;">
-    Send Booking Request
-  </button>
-</section>  
-<section style="padding:60px 20px; background:#f9f9f9; text-align:center;">
-    <h2 style="margin-bottom:30px;">Our Location on Google Maps</h2>
-
-    <div style="max-width:1000px; margin:auto; border-radius:15px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+ 
+    
+  
+    
         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.507552457265!2d78.12117357767315!3d29.907287025052245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390947681dec6769%3A0x8a7a39e37c774100!2sDhamvas%20Tour%26Travels!5e0!3m2!1sen!2sin!4v1771267604778!5m2!1sen!2sin" 
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        
+        
+  
+        
 
-    </div>
-</section>
-<a href="https://wa.me/919634175422" target="_blank" class="whatsapp-float">
-WhatsApp
-</a>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const counters = document.querySelectorAll('.counter');
-  let started = false;
-
-  function startCounter() {
-    if (started) return;
-
-    const section = document.querySelector('.experience');
-    const sectionTop = section.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (sectionTop < screenHeight - 100) {
-      counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const speed = 200;
-
-        const updateCount = () => {
-          const increment = target / speed;
-
-          if (count < target) {
-            count += increment;
-            counter.innerText = Math.ceil(count);
-            setTimeout(updateCount, 20);
-          } else {
-            counter.innerText = target;
-          }
-        };
-
-        updateCount();
-      });
-
-      started = true;
-    }
-  }
-
-  startCounter();
-  window.addEventListener('scroll', startCounter);
-
-});
+        
 
 
 
 
-function sendToWhatsApp() {
-  var name = document.getElementById("name").value;
-  var phone = document.getElementById("phone").value;
-  var destination = document.getElementById("destination").value;
-  var date = document.getElementById("date").value;
 
-  var message = "New Booking Enquiry:%0A"
-    + "Name: " + name + "%0A"
-    + "Phone: " + phone + "%0A"
-    + "Destination: " + destination + "%0A"
-    + "Travel Date: " + date;
-
-  var whatsappURL = "https://wa.me/919634175422?text=" + message;
-
-  window.open(whatsappURL, "_blank");
-}
-</script>
-
-</body>
-</html>
+  
