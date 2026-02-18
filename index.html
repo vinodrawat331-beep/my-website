@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhamvas | Char Dham Yatra & Car Rental Haridwar</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ============================= */
+/* 🌼 THEME CONTROL SYSTEM */
+/* Change color only here in future */
+/* ============================= */
+
+:root {
+    --primary-color: #d4af37;   /* Golden */
+    --secondary-color: #ff9933; /* Saffron */
+    --dark-bg: #111111;
+    --light-bg: #ffffff;
+    --text-dark: #222222;
+    --text-light: #ffffff;
+}
+
+/* ============================= */
+/* GLOBAL STYLE */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 60px 8%;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    background: var(--dark-bg);
+    color: var(--text-light);
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+nav a {
+    margin-left: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('images/kedarnath.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    nav {
+        display: none;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">DHAMVAS</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#packages">Char Dham</a>
+        <a href="#cars">Car Rental</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Divya Char Dham Yatra – Vishwas, Suraksha aur Seva ke Saath</h1>
+        <p>Serving Devotees Across Uttarakhand Since 2003 | 23+ Years Trusted Experience</p>
+        <a href="tel:+91XXXXXXXXXX" class="btn">Call Now</a>
+    </div>
+</section>
