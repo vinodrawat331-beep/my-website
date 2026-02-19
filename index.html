@@ -7,11 +7,8 @@
 
 <style>
 :root {
-    --main-bg: #0f3d3e;
     --orange: #ff6a00;
-    --yellow: #ffb000;
-    --white: #ffffff;
-    --black: #000000;
+    --green: #25D366;
 }
 
 * {
@@ -23,89 +20,69 @@
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1626621341517-bbf3d9995b9f');
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url('https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Uttarakhand.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--white);
+    color: white;
     padding: 20px;
+}
+
+.devotional-top {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-bottom: 8px;
 }
 
 .hero-content h1 {
     font-size: 42px;
-    margin-bottom: 15px;
+    margin: 10px 0;
 }
 
-.hero-content p {
+.tagline {
     font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.devotional-line {
-    font-size: 16px;
-    color: #ffcc00;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 button {
-    padding: 14px 32px;
-    border-radius: 40px;
+    padding: 12px 20px;
+    border-radius: 30px;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin: 8px;
+    width: 260px;
 }
 
 .btn-orange {
     background-color: var(--orange);
-    color: var(--white);
+    color: white;
 }
 
-.btn-yellow {
-    background-color: var(--yellow);
-    color: var(--black);
+.btn-green {
+    background-color: var(--green);
+    color: white;
 }
 
 .footer {
-    background-color: var(--main-bg);
-    color: var(--white);
+    background-color: #0f3d3e;
+    color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 18px;
-}
-
-@media (max-width: 768px) {
-
-.hero-content h1 {
-    font-size: 28px;
-}
-
-.hero-content p {
+    padding: 15px;
     font-size: 16px;
 }
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-}
-
-button {
-    width: 100%;
-}
-
-}
-
 </style>
 </head>
 
@@ -114,11 +91,11 @@ button {
 <section class="hero">
 <div class="hero-content">
 
-<p class="devotional-line">ॐ नमः शिवाय | हर हर महादेव</p>
+<p class="devotional-top">जय बद्री नारायण 🙏</p>
 
 <h1>Dhamvas</h1>
 
-<p><strong>Char Dham & Uttarakhand Tour Specialist</strong></p>
+<p class="tagline"><strong>Char Dham & Uttarakhand Tour Specialist</strong></p>
 <p>Since 2003 | 20+ Years Mountain Driving Experience</p>
 
 <div class="buttons">
@@ -132,7 +109,7 @@ button {
 </a>
 
 <a href="https://wa.me/919634175422">
-<button class="btn-yellow">WhatsApp 9634175422</button>
+<button class="btn-green">WhatsApp 9634175422</button>
 </a>
 
 </div>
@@ -141,8 +118,7 @@ button {
 </section>
 
 <footer class="footer">
-<p>जय बद्री विशाल 🙏</p>
-<p>© 2025 Dhamvas.com | All Rights Reserved</p>
+<p>जय बद्री विशाल 🙏 | Since 2003</p>
 </footer>
 
 </body>
