@@ -1,88 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DHAMVAS - Char Dham Tour Specialist</title>
+<title>Dhamvas | Char Dham Yatra Specialist</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+:root {
+    --main-bg: #0f3d3e;
+    --orange: #ff6a00;
+    --yellow: #ffb000;
+    --white: #ffffff;
+    --black: #000000;
 }
 
-.top-bar {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 8px;
-    font-size: 14px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 .hero {
     height: 100vh;
-    background: 
-    linear-gradient(rgba(0,70,80,0.75), rgba(0,70,80,0.75)),
-    url('https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=1600&q=80');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1626621341517-bbf3d9995b9f');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--white);
     padding: 20px;
 }
 
 .hero-content h1 {
-    font-size: 60px;
-    margin: 0;
+    font-size: 42px;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
     font-size: 18px;
-    margin: 10px 0;
+    margin-bottom: 8px;
+}
+
+.devotional-line {
+    font-size: 16px;
+    color: #ffcc00;
+    margin-bottom: 12px;
 }
 
 .buttons {
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
-.buttons a {
-    text-decoration: none;
-    background: #ff6a00;
-    color: white;
-    padding: 12px 25px;
-    margin: 8px;
-    display: inline-block;
-    border-radius: 6px;
+button {
+    padding: 14px 32px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
+    margin: 8px;
 }
 
-.buttons a:hover {
-    background: #e65c00;
+.btn-orange {
+    background-color: var(--orange);
+    color: var(--white);
 }
+
+.btn-yellow {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.footer {
+    background-color: var(--main-bg);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+.hero-content h1 {
+    font-size: 28px;
+}
+
+.hero-content p {
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 100%;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="top-bar">
-📞 8077703397 | 8630538765 | 💬 WhatsApp: 9634175422
+<section class="hero">
+<div class="hero-content">
+
+<p class="devotional-line">ॐ नमः शिवाय | हर हर महादेव</p>
+
+<h1>Dhamvas</h1>
+
+<p><strong>Char Dham & Uttarakhand Tour Specialist</strong></p>
+<p>Since 2003 | 20+ Years Mountain Driving Experience</p>
+
+<div class="buttons">
+
+<a href="tel:8077703397">
+<button class="btn-orange">Call 8077703397</button>
+</a>
+
+<a href="tel:8630538765">
+<button class="btn-orange">Call 8630538765</button>
+</a>
+
+<a href="https://wa.me/919634175422">
+<button class="btn-yellow">WhatsApp 9634175422</button>
+</a>
+
 </div>
 
-<div class="hero">
-    <div class="hero-content">
-        <h1>DHAMVAS</h1>
-        <p>Char Dham & Uttarakhand Tour Specialist</p>
-        <p>Since 2003 | 20+ Years Mountain Driving Experience</p>
-
-        <div class="buttons">
-            <a href="tel:8077703397">Call Now</a>
-            <a href="tel:8630538765">Second Number</a>
-            <a href="https://wa.me/919634175422">WhatsApp</a>
-        </div>
-    </div>
 </div>
+</section>
+
+<footer class="footer">
+<p>जय बद्री विशाल 🙏</p>
+<p>© 2025 Dhamvas.com | All Rights Reserved</p>
+</footer>
 
 </body>
 </html>
