@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DHAMVAS | Taxi & Car Rental Services</title>
+<title>Taxi & Car Rental</title>
 
 <style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(to bottom,#071c24,#000);
+  color:white;
+  text-align:center;
+}
+
+h1{
+  color:#ffc107;
+  text-shadow:0 0 20px #ffb300;
+  padding-top:30px;
+}
+
+.tagline{
+  margin-bottom:40px;
+}
+
+.card{
+  background:#0d2b36;
+  margin:20px;
+  padding:20px;
+  border-radius:20px;
+}
+
+.card img{
+  width:100%;
+  border-radius:15px;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  background:#ffc107;
+  color:black;
+  padding:10px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+
+
+
+/* THEME CONTROL */
+:root{
+   --primary:#ffc107;
+   --glow:#ffb300;
+   --bg-dark:#071c24;
+   --card-dark:#0d2b36;
+   --text-light:#ffffff;
+}
+
+/* GLOBAL */
+body{
+   margin:0;
+   font-family:Segoe UI, sans-serif;
+   background:linear-gradient(to bottom,var(--bg-dark),#000);
+   color:var(--text-light);
+}
+
+/* HERO */
+.hero{
+   min-height:100vh;
+   background:
+   linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+   url('kedarnath-hero.jpg') center/cover no-repeat;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+
+47 </style>
+48 </head>
+</style>
+</head>
+
+<body>
+
+<h1>Taxi & Car Rental Services</h1>
+<p class="tagline">
+Only Taxi Service Available for Char Dham, Do Dham & Local Tours.
+</p>
+
+<div class="card">
+  <img src="swift.jpg">
+  <h3>Swift Dzire</h3>
+  <p>4 Seater</p>
+  <p>₹3500 / Day</p>
+  <a href="tel:8077703397" class="btn">Call Now</a>
+</div>
+
+<div class="card">
+  <img src="carens.jpg">
+  <h3>Kia Carens</h3>
+  <p>6 Seater</p>
+  <p>₹4500 / Day</p>
+  <a href="tel:8077703397" class="btn">Call Now</a>
+</div>
+
+<div class="card">
+  <img src="crysta.jpg">
+  <h3>Innova Crysta</h3>
+  <p>6 & 7 Seater</p>
+  <p>₹6000 / Day</p>
+  <a href="tel:8077703397" class="btn">Call Now</a>
+</div>
+
+</body>
+</html>
+
 
 /* ========= THEME CONTROL (Change color here only) ========= */
 :root{
