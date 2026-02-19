@@ -162,46 +162,35 @@ border-radius:15px;
 
 .contact-buttons{
 display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-   row-gap:25px;
-margin-top:25px;
-}
-
-.whatsapp-btn{
-background:linear-gradient(135deg,#1fae54,#128c7e);
-}
-/* Premium Layout */
-.contact-buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+flex-direction:column;
+align-items:center;
 margin-top:30px;
+gap:15px;
 }
-
-.contact-buttons a{
-flex:0 1 220px;
+.btn{
+display:block;
+width:240px;
+padding:14px 0;
+font-size:16px;
+font-weight:600;
 text-align:center;
+border-radius:50px;
+text-decoration:none;
+color:#000000;
+background:linear-gradient(135deg,#ffd700,#ffb300);
+box-shadow:0 6px 15px rgba(0,0,0,0.25);
 transition:0.3s ease;
 }
 
-.contact-buttons a:hover{
+.btn:hover{
 transform:translateY(-3px);
-box-shadow:0 8px 25px rgba(0,0,0,0.3);
 }
 
-.whatsapp-btn{
-flex-basis:100%;
-max-width:240px;
-margin:18px auto 0;
-padding:14px 0;
-font-size:16px;
-background:linear-gradient(135deg,#1fae54,#128c7e);
-box-shadow:0 6px 18px rgba(0,0,0,0.25);
-border-radius:50px;
-}
+
+
+
+
+
 
 .hero h1 {
     font-size: 48px;
@@ -247,9 +236,10 @@ border-radius:50px;
 
 <div class="contact-buttons">
 
-  <a href="tel:8077703397" class="btn">Call Now</a>
-  <a href="tel:8630538765" class="btn">Second Number</a>
-  <a href="https://wa.me/919634175422"class="btn whatsapp-btn" >WhatsApp Now</a>
+<a href="tel:8077703397" class="btn">Call Now</a>
+<a href="tel:8630538765" class="btn">Second Number</a>
+<a href="https://wa.me/919634175422" class="btn">WhatsApp Now</a>
+
 </div>
   
 </section>
