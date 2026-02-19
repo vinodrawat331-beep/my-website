@@ -178,9 +178,32 @@ text-decoration:none;
 font-weight:bold;
 box-shadow:0 0 15px #25D366;
 }
+/* Premium Layout */
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
 .contact-buttons a{
-flex:0 1 200px;
+flex:0 1 220px;
 text-align:center;
+transition:0.3s ease;
+}
+
+.contact-buttons a:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn{
+flex-basis:100%;
+max-width:260px;
+margin:25px auto 0;
+background:#25D366;
+box-shadow:0 0 20px #25D366;
 }
 
 .hero h1 {
@@ -225,11 +248,11 @@ text-align:center;
 <p>Char Dham Yatra & Tour Specialist</p>
 <p>Since 2003 | 20+ Years Mountain Driving Experience</p>
 
-<div class="hero-buttons">
+<div class="contact-buttons">
 
   <a href="tel:8077703397" class="btn">Call Now</a>
   <a href="tel:8630538765" class="btn">Second Number</a>
-  <a href="https://wa.me/919634175422" class="btn whatsapp">WhatsApp Now</a>
+  <a href="https://wa.me/919634175422"class="btn whatsapp-btn" >WhatsApp Now</a>
 </div>
   
 </section>
