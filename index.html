@@ -94,6 +94,28 @@
     padding: 15px;
     font-size: 16px;
 }
+    .stats {
+  background: #000;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.stat-box {
+  margin: 40px 0;
+}
+
+.stat-box h2 {
+  font-size: 42px;
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.stat-box p {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
 </style>
 </head>
 
@@ -127,10 +149,54 @@
 
 </div>
 </section>
+<section class="stats">
+  <div class="stat-box">
+    <h2 class="counter" data-target="20">0</h2>
+    <p>Years Experience</p>
+  </div>
 
+  <div class="stat-box">
+    <h2 class="counter" data-target="5000">0</h2>
+    <p>Happy Clients</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="1200">0</h2>
+    <p>Tours Completed</p>
+  </div>
+</section>
 <footer class="footer">
 <p>जय बद्री विशाल 🙏 | Since 2003</p>
 </footer>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    counter.innerText = '0';
+
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      const increment = target / 100;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.innerText = target + "+";
+      }
+    };
+
+    updateCounter();
+  });
+});
+</script>
+
 </body>
+
+
 </html>
