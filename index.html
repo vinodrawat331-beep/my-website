@@ -7,9 +7,13 @@
 
 <style>
 :root {
-    --orange: #ff6a00;
-    --green: #25D366;
-}5
+   --orange: #ff6a00;
+   --green: #25D366;
+}
+    html, body {
+    overflow-x: hidden;
+    }
+
 
 * {
     margin: 0;
@@ -19,7 +23,8 @@
 }
 
 .hero {
-   height: 75vh;
+   min-height: 75vh;
+    width: 100%;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url('kedarnath.jpg');
     background-size: cover;
@@ -206,12 +211,15 @@
 body {
     background: linear-gradient(180deg, #0f3b3f, #0c2f33);
 }
-
+* {
+   box-sizing: border-box;
+}
 .stats {
     width: 95%;
     margin: 40px auto 40px auto;
     padding: 90px 40px;
-    background: rgba(0, set 0, 0, 0.85);
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0, 0.85);
     backdrop-filter: blur(8px);
     border-radius: 30px;
     color: #ffffff;
