@@ -285,7 +285,81 @@ button {
     font-weight: 600;
 }
 
+/* ================= TAXI SECTION ================= */
 
+.taxi-section {
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    text-align: center;
+}
+
+.taxi-section h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.taxi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.taxi-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: 0.4s ease;
+}
+
+.taxi-card:hover {
+    transform: translateY(-10px);
+}
+
+.taxi-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.taxi-card h3 {
+    color: #ffb300;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.taxi-card p {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.taxi-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.taxi-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffb300;
+    color: #000;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.taxi-btn:hover {
+    background: #ffa000;
+}
 </style>
 </head>
 
@@ -319,6 +393,29 @@ button {
 
 </div>
 </section>
+   <section class="taxi-section">
+    <h2>Our Taxi Services</h2>
+
+    <div class="taxi-container">
+
+        <div class="taxi-card">
+            <img src="https://via.placeholder.com/300x200" alt="Sedan">
+            <h3>Sedan</h3>
+            <p>Comfortable 4 seater taxi for Char Dham & Local Tours.</p>
+            <div class="taxi-price">₹12/km</div>
+            <a href="tel:8077703397" class="taxi-btn">Book Now</a>
+        </div>
+
+        <div class="taxi-card">
+            <img src="https://via.placeholder.com/300x200" alt="SUV">
+            <h3>SUV</h3>
+            <p>Spacious SUV perfect for mountain trips.</p>
+            <div class="taxi-price">₹16/km</div>
+            <a href="tel:8077703397" class="taxi-btn">Book Now</a>
+        </div>
+
+    </div>
+   </section>
 <section class="stats">
   <div class="stat-box">
     <h2 class="counter" data-target="20">0</h2>
@@ -400,6 +497,54 @@ button {
   </div>
 
 </section>    
+   <section class="taxi-section">
+
+    <h2 class="section-title">Taxi & Car Rental Services</h2>
+    <p class="section-subtitle">
+        Only Taxi Service Available for Char Dham, Do Dham & Local Tours
+    </p>
+
+    <div class="taxi-container">
+
+        <!-- Dzire -->
+        <div class="taxi-card">
+            <img src="dzire.jpg" alt="Dzire">
+            <h3>Swift Dzire</h3>
+            <p>4 Seater</p>
+            <h4>₹3500 / Day</h4>
+            <a href="tel:8077703397" class="call-btn">Call Now</a>
+        </div>
+
+        <!-- Kia Carens -->
+        <div class="taxi-card">
+            <img src="carens.jpg" alt="Kia Carens">
+            <h3>Kia Carens</h3>
+            <p>6 Seater</p>
+            <h4>₹4500 / Day</h4>
+            <a href="tel:8077703397" class="call-btn">Call Now</a>
+        </div>
+
+        <!-- Innova Crysta -->
+        <div class="taxi-card">
+            <img src="innova-crysta.jpg" alt="Innova Crysta">
+            <h3>Innova Crysta</h3>
+            <p>6 & 7 Seater</p>
+            <h4>₹6000 / Day</h4>
+            <a href="tel:8077703397" class="call-btn">Call Now</a>
+        </div>
+
+        <!-- Tempo Traveller -->
+        <div class="taxi-card">
+            <img src="tempo.jpg" alt="Tempo Traveller">
+            <h3>Tempo Traveller</h3>
+            <p>12 - 26 Seater</p>
+            <h4>₹8000 / Day</h4>
+            <a href="tel:8077703397" class="call-btn">Call Now</a>
+        </div>
+
+    </div>
+
+   </section>
 <footer class="footer">
 <p>जय बद्री विशाल 🙏 | Since 2003</p>
 </footer>
