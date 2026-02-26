@@ -568,18 +568,28 @@ button {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.call-btn {
-    background: linear-gradient(45deg, #1e88e5, #42a5f5);
-}
+/* ===== PREMIUM HERO BUTTONS ===== */
 
+.call-btn,
 .wa-btn {
-    background: linear-gradient(45deg, #25D366, #2ecc71);
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #ff7a00, #ffb347);
+    box-shadow: 0 6px 20px rgba(255, 122, 0, 0.4);
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    text-decoration: none;
 }
 
-.call-btn:hover, .wa-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
-}   
+.call-btn:hover,
+.wa-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(255, 122, 0, 0.6);
+}
 /* Desktop */
 .btn-orange {
    padding: 14px 35px;
@@ -592,6 +602,13 @@ button {
       padding: 10px 22px;
       font-size: 15px;
    }
+   .call-btn,
+.wa-btn {
+    width: 90%;
+    max-width: 320px;
+    font-size: 15px;
+    padding: 12px 0;
+}
 }
    
 </style>
