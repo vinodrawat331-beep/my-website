@@ -526,32 +526,62 @@ button {
 .footer a:hover {
     color: #ffcc00;
 }
-   .footer-contact {
+.footer {
+    background: linear-gradient(135deg, #063c3c, #0d5c5c);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.footer-tagline {
+    margin-top: 8px;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.footer-address {
     margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.call-btn, .wa-btn {
+    padding: 10px 22px;
+    border-radius: 30px;
+    color: white !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .call-btn {
-    background: #1e88e5;
-    padding: 8px 15px;
-    border-radius: 20px;
-    color: white !important;
-    margin-right: 8px;
-    display: inline-block;
+    background: linear-gradient(45deg, #1e88e5, #42a5f5);
 }
 
 .wa-btn {
-    background: #25D366;
-    padding: 8px 15px;
-    border-radius: 20px;
-    color: white !important;
-    display: inline-block;
+    background: linear-gradient(45deg, #25D366, #2ecc71);
 }
-   .footer-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-   }
+
+.call-btn:hover, .wa-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+}   
+   
+   
 </style>
    
 </head>
@@ -805,15 +835,24 @@ button {
 
 
 <footer class="footer">
-    <p>जय बद्री विशाल 🙏</p>
-   <p>Ganpati Dham Phase - 3, Haridwar, Uttarakhand</p>
-    <p class="footer-contact">
-    📞 <a href="tel:8077703397" class="call-btn">8077703397</a>
-    💬 <a href="https://wa.me/919634175422" target="_blank" class="wa-btn">WhatsApp 9634175422</a>
+
+    <p class="footer-title">🙏 Jai Badri Vishal</p>
+
+    <p class="footer-tagline">
+        Char Dham & Uttarakhand Tour Specialist | Since 2003
     </p>
-    
-    <p>Char Dham & Uttarakhand Tour Specialist | Since 2003</p>
-    <p>© 2026 All Rights Reserved</p>
+
+    <p class="footer-address">
+        📍 Ganpati Dham Phase - 3, Haridwar, Uttarakhand
+    </p>
+
+    <div class="footer-buttons">
+        <a href="tel:8077703397" class="call-btn">📞 8077703397</a>
+        <a href="https://wa.me/919634175422" target="_blank" class="wa-btn">
+            💬 WhatsApp 9634175422
+        </a>
+    </div>
+
 </footer>
 
 
