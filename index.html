@@ -465,6 +465,48 @@ button {
 .contact-btn:hover {
     opacity: 0.8;
 }
+   .booking-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #062626, #0d3b3b);
+}
+
+.booking-section h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-form button:hover {
+    background: #1ebe5d;
+}
 </style>
    
 </head>
@@ -689,6 +731,18 @@ button {
        ✉ Email
     </a>
   </section> 
+   <section class="booking-section">
+    <h2>Book Your Tour Now</h2>
+
+    <div class="booking-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+        <input type="text" id="address" placeholder="Your Address" required>
+        <input type="text" id="program" placeholder="Tour Program" required>
+
+        <button onclick="sendToWhatsApp()">Send on WhatsApp</button>
+    </div>
+   </section>
 <footer class="footer">
 <p>जय बद्री विशाल 🙏 | Since 2003</p>
 </footer>
@@ -737,6 +791,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+   function sendToWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var address = document.getElementById("address").value;
+    var program = document.getElementById("program").value;
+
+    var message = "New Tour Booking:%0A"
+        + "Name: " + name + "%0A"
+        + "Phone: " + phone + "%0A"
+        + "Address: " + address + "%0A"
+        + "Tour Program: " + program;
+
+    var whatsappURL = "https://wa.me/919634175422?text=" + message;
+      window.open(whatsappURL, "_blank");
+   }
 </script>
 
     
