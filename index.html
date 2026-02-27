@@ -568,46 +568,15 @@ button {
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* ===== PREMIUM HERO BUTTONS ===== */
 
-.call-btn,
-.wa-btn {
-    display: inline-block;
-    padding: 14px 32px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    border-radius: 40px;
-    background: linear-gradient(135deg, #ff7a00, #ffb347);
-    box-shadow: 0 6px 20px rgba(255, 122, 0, 0.4);
-    transition: all 0.3s ease;
-    margin: 10px 0;
-    text-decoration: none;
-}
 
-.call-btn:hover,
-.wa-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(255, 122, 0, 0.6);
-}
 /* Desktop */
-.btn-orange {
-   padding: 14px 35px;
-   font-size: 18px;
-}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-   .btn-orange {
-      padding: 10px 22px;
-      font-size: 15px;
-   }
-   .call-btn,
-.wa-btn {
-    width: 90%;
-    max-width: 320px;
-    font-size: 15px;
-    padding: 12px 0;
+
+
    .hero h1 {
     font-size: 26px;
 }
@@ -628,6 +597,35 @@ button {
     font-size: 16px;
     opacity: 0.95;
 }
+   /* FINAL BUTTON STYLE */
+
+.btn-call {
+    background: #1e88e5;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn-call:hover {
+    background: #1565c0;
+}
+
+.btn-whatsapp {
+    background: #25D366;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+}
 </style>
    
 </head>
@@ -646,17 +644,17 @@ button {
 
 <div class="buttons">
 
-   <a href="tel:8077703397" class="btn-orange">
-      Call 8077703397
-   </a>
+   <a href="tel:8077703397" class="btn-call">
+    Call 8077703397
+</a>
 
-   <a href="tel:8630538765" class="btn-orange">
-      Call 8630538765
-   </a>
+<a href="tel:8630538765" class="btn-call">
+    Call 8630538765
+</a>
 
-   <a href="https://wa.me/919634175422" class="btn-orange">
-      WhatsApp 9634175422
-   </a>
+<a href="https://wa.me/919634175422" class="btn-whatsapp">
+    WhatsApp 9634175422
+</a>
 
 </div>
 
