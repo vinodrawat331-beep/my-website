@@ -653,10 +653,35 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none !important;
     border-bottom: none !important;
 }
-
-.package a {
+/* HARD REMOVE ALL UNDERLINES */
+.stats h2,
+.stats p,
+.section-title,
+.package h3 {
     text-decoration: none !important;
-} 
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.stats *,
+.package *,
+.tour-packages * {
+    box-shadow: none !important;
+   }
+a {
+   color: inherit !important;
+   text-decoration: none !important;
+}
+
+a h2,
+a h3,
+a p,
+a span {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+    
 </style>
    
 </head>
