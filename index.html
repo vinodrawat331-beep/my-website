@@ -664,11 +664,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none !important;
 }
 
-.stats *,
-.package *,
-.tour-packages * {
-    box-shadow: none !important;
-   }
+
 
 .section-title {
   color: white !important;
@@ -682,6 +678,26 @@ font-size: 14px;
   display: inline-block;
   margin-top: 10px;
    }
+  .package {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
 </style>
    
 </head>
